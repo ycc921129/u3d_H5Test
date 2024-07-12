@@ -6,6 +6,6 @@
     </style>
     <style name="UnityThemePlayerSelector1" parent="@style/UnityThemePlayerSelector">
         <item name="android:windowIsTranslucent">false</item>
-		<item name="android:windowBackground">@android:color/back</item>
+		<item name="android:windowBackground">@color/black</item>
     </style>
 </resources>

@@ -27,9 +27,8 @@ public class UnityPlayerActivityEx extends Activity
     // Setup activity layout
     @Override protected void onCreate(Bundle savedInstanceState)
     {
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-        super.onCreate(savedInstanceState);
-        System.out.println("UnityPlayerActivityEx onCreate");
+        super.onCreate(savedInstanceState);     
+        Intent intent = new Intent(IronsourceAdActivity.this, UnityPlayerActivity.class);
+        startActivity(intent);
     }
 }
