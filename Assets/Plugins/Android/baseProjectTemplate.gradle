@@ -1,0 +1,24 @@
+allprojects {
+    buildscript {
+        repositories {
+            mavenCentral()
+            google()
+        }
+
+        dependencies {            
+            classpath 'com.android.tools.build:gradle:7.3.0'
+        }
+    }
+    
+    repositories {
+        mavenCentral()
+        google()
+        flatDir {
+            dirs "${project(':unityLibrary').projectDir}/libs"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
