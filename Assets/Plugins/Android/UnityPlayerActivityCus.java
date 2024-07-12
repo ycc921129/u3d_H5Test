@@ -22,11 +22,13 @@ import android.os.Process;
 
 import java.util.Map;
 
-public class UnityPlayerActivityEx extends UnityPlayerActivity
+public class UnityPlayerActivityCus extends UnityPlayerActivity
 {
     // Setup activity layout
     @Override protected void onCreate(Bundle savedInstanceState)
     {
-        super.onCreate(savedInstanceState);   
+        super.onCreate(savedInstanceState);     
+        Intent intent = new Intent(UnityPlayerActivityCus.this, com.unity3d.player.UnityPlayerActivity.class);
+        startActivity(intent);  
     }
 }
