@@ -18,6 +18,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.os.Process;
+import com.unity3d.player.UnityPlayer;
 
 
 import java.util.Map;
@@ -28,7 +29,7 @@ public class UnityPlayerActivityEx extends Activity
     @Override protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);     
-        Intent intent = new Intent(IronsourceAdActivity.this, UnityPlayerActivity.class);
+        Intent intent = new Intent(UnityPlayerActivityEx.this, UnityPlayerActivity.class);
         startActivity(intent);
     }
 }
